@@ -79,7 +79,7 @@ export default {
             return classes;
         },
         containerStyle() {
-            let classes = ['flex-grow', 'border-b', 'border-r', 'border-l', 'border-60', 'rounded-b-lg', 'flex'];
+            let classes = ['flex-grow', 'border-b', 'border-r', 'border-l', 'border-60', 'rounded-b-lg', 'flex', 'flex-wrap'];
             if(!this.group.title) {
                 classes.push('border-t');
                 classes.push('rounded-tr-lg');
