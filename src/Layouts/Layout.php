@@ -287,7 +287,7 @@ class Layout implements LayoutInterface, JsonSerializable, ArrayAccess, Arrayabl
      */
     public function filterForDetail(NovaRequest $request, $resource)
     {
-        $this->fields = $this->fields->filterForDetail($request, $resource);
+        //$this->fields = $this->fields->filterForDetail($request, $resource);
     }
 
     /**
