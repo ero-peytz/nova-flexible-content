@@ -1,4 +1,11 @@
 // Nova Tool CSS
+.flex.hidden{
+    display:none;
+}
+.flex.border-b.border-40.remove-bottom-border{
+    width: 100%;
+}
+
 $multiselect-primary-color: var(--primary);
 $multiselect-primary-color-dark: var(--primary-dark);
 $mulitselect-secondary-hover-color: #bacad6;
