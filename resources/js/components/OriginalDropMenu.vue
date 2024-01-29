@@ -2,8 +2,7 @@
     <div class="relative" v-if="layouts">
         <div v-if="isLayoutsDropdownOpen && layouts.length > 1"
                 ref="dropdown"
-                class="z-20 absolute rounded-lg shadow-lg max-w-full max-h-search overflow-y-auto border border-40"
-                v-bind:class="dropdownClasses"
+                class="z-20 absolute rounded-lg shadow-lg max-w-full max-h-search overflow-y-auto border border-40 mb-3 pin-t"
         >
             <ul class="list-reset">
                 <li v-for="layout in filteredLayouts" class="border-b border-gray-100 dark:border-gray-700" :key="'add-'+layout.name">
@@ -55,15 +54,6 @@
             isBelowLayoutLimits() {
                 return (this.limitCounter > 0 || this.limitCounter === null) && this.filteredLayouts.length > 0;
             },
-
-            dropdownClasses() {
-                return {
-                    'mt-3': this.dropdownOrientation === 'bottom',
-                    'pin-b': this.dropdownOrientation === 'bottom',
-                    'mb-3': this.dropdownOrientation === 'top',
-                    'pin-t': this.dropdownOrientation === 'top',
-                };
-            }
         },
 
         methods: {
